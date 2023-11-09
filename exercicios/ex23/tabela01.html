@@ -10,6 +10,7 @@
         }
         table {
             width: 400px;
+            height: 400px;
             border-collapse: collapse; /*para juntar as bordas*/
 
         }
@@ -20,7 +21,12 @@
         td {
             border: 1px solid black;
             padding: 8px;
-            text-align: center;
+            text-align: center; /* alinhamento horizontal da célula. */
+            vertical-align: top; /*alinhamento vertical*/
+        }
+
+        .numero {
+            text-align: right;
         }
 
         td.dados {
@@ -53,10 +59,10 @@
         <tr>
             <td>a3</td>
             <td>b3</td>
-            <td>c3</td>
+            <td class="numero">c3</td>
         </tr>
         <tr>
-            <td>a4</td>
+            <td class="numero">a4</td>
             <td>b4</td>
             <td class="dados">c4</td>
         </tr>
