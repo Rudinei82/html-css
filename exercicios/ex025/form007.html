@@ -7,9 +7,9 @@
 </head>
 <body>
     <h1>Exemplo de formulários</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="post" autocomplete="on">
 
-        <label for="iest">Estado</label>
+        <label for="iest">Estado:</label>
         <select name="estado" id="iest">
         <p>
             <option value=""seleted>---escolha opção---</option>
@@ -35,22 +35,23 @@
         </p>
 
         <p>
-            <label for="iprof">Profissão</label>
+           <label for="iprof">Profissão:</label>
             <input type="text" name="prof" id="iprof" list="lstprof">
-
-           <datalist id="lstprof">
+            <datalist id="lstprof">
             <option Administrador></option>
             <option Contador></option>
             <option Professor></option>
-            <option Meacnico></option>
+            <option Meacanico></option>
             <option Desenvolvedor></option>
-           </datalist>
+            </datalist>
 
         </p>
 
         <p>
-            <label for="imsg">Mensagem</label>
-            
+            <label for="imsg">Mensagem </label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10">
+
+            </textarea>
 
         </p>
   
